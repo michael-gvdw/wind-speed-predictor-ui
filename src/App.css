@@ -1,7 +1,39 @@
 .app {
   margin-left: 5rem;
-  padding: 1rem; 
+  padding: 1rem;
 }
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* grid system */
+.row {
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.col {
+  grid-column: span auto;
+}
+
+@media screen and (min-width: 600px) {
+  .col-wide {
+    grid-column: span 2 / auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .col-tall {
+    grid-column: span 2 / auto;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .app {

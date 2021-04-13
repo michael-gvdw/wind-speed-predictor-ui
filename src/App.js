@@ -21,7 +21,7 @@ function App() {
       <Sidenav />
 
       <Switch>
-        <main className={`app`}>
+        <main className={`app container`}>
           <Route exact path={[`/`, `/home`]} component={Temp}/>
           <Route path={`/about`} component={Temp}/>
           <Route path={`/terms`} component={Temp}/>

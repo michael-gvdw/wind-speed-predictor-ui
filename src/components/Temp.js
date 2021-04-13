@@ -1,7 +1,18 @@
 
+
+import ContactInfoComponent from './common/ContactInfoComponent'
+
 const Temp = () => {
     return (
-        <h1>Temp page</h1>
+        <section className={`row`}>
+                <div className={`col-wide`}>
+                    <ContactInfoComponent />
+                </div>
+
+                <div className={`col`}>
+                    <ContactInfoComponent />
+                </div>
+        </section>
     )
 }
 
