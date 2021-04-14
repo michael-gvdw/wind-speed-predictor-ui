@@ -20,7 +20,7 @@ const ConstactInfoComponent = () => {
     return (
         <div className={`center-div`}>
             <div className={`profile-card`}>
-                <img src={`${process.env.PUBLIC_URL}/me.jpg`} alt={`Michael`}/>
+                <img src={`${process.env.PUBLIC_URL}/me.png`} alt={`Michael`}/>
 
                 <h1>Michael Groenewegen van der Weijden</h1>
 

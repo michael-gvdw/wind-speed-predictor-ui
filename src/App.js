@@ -13,6 +13,7 @@ import WindForecastComponent from "./components/WindForecastComponent"
 import ContactInfoComponent from './components/common/ContactInfoComponent'
 
 
+
 // main entry point
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path={[`/`, `/home`]} component={WindForecastComponent}/>
           <Route path={`/about`} component={ContactInfoComponent}/>
           <Route path={`/terms`} component={WindForecastComponent}/>
+
         </main>
       </Switch>
 
