@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 // Router
@@ -10,7 +9,8 @@ import {
 
 // custom
 import Sidenav from "./components/common/Sidenav"
-import Temp from "./components/Temp"
+import WindForecastComponent from "./components/WindForecastComponent"
+import ContactInfoComponent from './components/common/ContactInfoComponent'
 
 
 // main entry point
@@ -21,10 +21,10 @@ function App() {
       <Sidenav />
 
       <Switch>
-        <main className={`app container`}>
-          <Route exact path={[`/`, `/home`]} component={Temp}/>
-          <Route path={`/about`} component={Temp}/>
-          <Route path={`/terms`} component={Temp}/>
+        <main className={`app`}>
+          <Route exact path={[`/`, `/home`]} component={WindForecastComponent}/>
+          <Route path={`/about`} component={ContactInfoComponent}/>
+          <Route path={`/terms`} component={WindForecastComponent}/>
         </main>
       </Switch>
 

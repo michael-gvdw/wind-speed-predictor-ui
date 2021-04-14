@@ -1,27 +1,23 @@
 
-
-
 .profile-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
     min-width: 240px;
     max-width: 600px;
     border: 1px solid black;
-
 
     &.title {
         color: grey;
         font-size: 1.5rem;
     }
 
-
     &.contact-links {
         display: flex;
         a {
             margin: auto;
         }
-
     }
 
     img {
@@ -45,14 +41,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
