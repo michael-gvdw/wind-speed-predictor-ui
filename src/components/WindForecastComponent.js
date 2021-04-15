@@ -27,7 +27,7 @@ const WindForecastComponent = () => {
     const handle_wind_speed_multiplier_change = (event) => {
         const { name, value } = event.target
 
-        if (value !== 0 || value !== 1 || value !== 1) {
+        if (value != 0 && value != 1 && value != 2) {
             set_wind_speed_multiplier(0)
         }
         else {
