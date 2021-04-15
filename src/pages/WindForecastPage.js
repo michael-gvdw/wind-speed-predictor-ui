@@ -23,7 +23,11 @@ const WindForecastPage = ({ handle_date_change, handle_wind_speed_multiplier_cha
             </div>
 
             <form>
-                <input type={`date`} value={``} onChange={handle_date_change} />
+                <div className={`select-group`}>
+                    <FormSelect start={1} end={32} label={`day:`} />
+                    <FormSelect start={1} end={13} label={`month:`} />
+                    <FormSelect start={2021} end={2022} label={`year:`}/>
+                </div>
                 <input type={`submit`} value={`submit`} />
             </form> 
 
@@ -36,6 +40,21 @@ const WindValue = (props) => {
         <div className={`value`}>
             <label>{ props.label }</label>
             <input type="text" value={props.value} readOnly={true} disabled={true} />
+        </div>
+    )
+}
+
+const FormSelect = (props) => {
+
+    let items = []
+    for (let i=props.start; i<props.end; i++) {
+        items.push(<option key={i}>{ i }</option>)
+    }
+
+    return (
+        <div className={`select-item`}>
+            <label>{ props.label }</label>
+            <select>{ items }</select>
         </div>
     )
 }
