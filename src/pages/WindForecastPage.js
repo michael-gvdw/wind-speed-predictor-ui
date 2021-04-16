@@ -32,7 +32,7 @@ const WindForecastPage = ({ handle_wind_speed_multiplier_change,
                     <FormSelect start={1} end={13} label={`month:`} value={month} handle_change={set_month} />
                     <FormSelect start={2021} end={2022} label={`year:`} value={year} handle_change={set_year} />
                 </div>
-                <input type={`submit`} value={`submit`} onClick={fetch_wind_speed}/>
+                <input type={`button`} value={`submit`} onClick={fetch_wind_speed}/>
             </form> 
 
         </div>
