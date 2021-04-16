@@ -42,6 +42,7 @@ const WindForecastComponent = () => {
 
     const fetch_wind_speed = async () => {
         const date = new Date(`${year}-${month}-${day}`).getTime()
+        console.log(date)
         const data = await fetch_wind_speed_data(date)
 
         set_wind_speed(data.wind)
