@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+// import { fetch_wind_speed_data } from '../service/WindSpeedService'
 
 import WindForecastPage from '../pages/WindForecastPage'
 
@@ -39,10 +40,17 @@ const WindForecastComponent = () => {
     	
     }
 
-    const fetch_wind_speed = (event) => {
+    const fetch_wind_speed = async (event) => {
         event.preventDefault()
-        
+
         const date = `${day}-${month}-${year}`
+        // const data = await fetch_wind_speed_data(date)
+        
+        // set_wind_speed(data.wind)
+        // set_wind_speed_lower(data.lower)
+        // set_wind_speed_upper(data.upper)
+
+        
         console.log(`click: ${date}`)
     }
 
