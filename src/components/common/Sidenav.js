@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 // style
-import "../../styles/common/sidenav.css"
+import "../../styles/common/sidenav.scss"
 
 // icons
 import { FcAbout } from 'react-icons/fc'
