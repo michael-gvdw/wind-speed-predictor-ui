@@ -10,6 +10,7 @@ import {
 // custom
 import Sidenav from "./components/common/Sidenav"
 import WindForecastComponent from "./components/WindForecastComponent"
+import AboutPage from './pages/AboutPage'
 import ContactInfoComponent from './components/common/ContactInfoComponent'
 
 
@@ -24,7 +25,7 @@ function App() {
       <Switch>
         <main className={`app`}>
           <Route exact path={[`/`, `/home`]} component={WindForecastComponent}/>
-          <Route path={`/about`} component={ContactInfoComponent}/>
+          <Route path={`/about`} component={AboutPage}/>
           <Route path={`/terms`} component={WindForecastComponent}/>
 
         </main>
