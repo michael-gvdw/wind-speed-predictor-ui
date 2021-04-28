@@ -5,12 +5,8 @@
     align-items: center;
     border-radius: 5px;
     min-width: 240px;
-    max-width: 600px;
+    max-width: 75ch;
     border: 1px solid black;
-    
-    @media screen and (max-width: 600px) {
-        margin-bottom: 5rem;
-    }
 
     &.title {
         color: grey;

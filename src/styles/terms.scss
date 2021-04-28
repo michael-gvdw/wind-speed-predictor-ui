@@ -1,0 +1,29 @@
+
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section {
+
+        &:nth-child(1) {
+            align-self: center;
+        }
+
+        h1 {
+            color: #444444;
+        }
+        h2 {
+            color: #555555;
+        }
+        p {
+            max-width: 75ch;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+
+

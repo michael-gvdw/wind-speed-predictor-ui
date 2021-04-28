@@ -11,7 +11,7 @@ import {
 import Sidenav from "./components/common/Sidenav"
 import WindForecastComponent from "./components/WindForecastComponent"
 import AboutPage from './pages/AboutPage'
-import ContactInfoComponent from './components/common/ContactInfoComponent'
+import TermsPage from './pages/TermsPage'
 
 
 
@@ -26,7 +26,7 @@ function App() {
         <main className={`app`}>
           <Route exact path={[`/`, `/home`]} component={WindForecastComponent}/>
           <Route path={`/about`} component={AboutPage}/>
-          <Route path={`/terms`} component={WindForecastComponent}/>
+          <Route path={`/terms`} component={TermsPage}/>
 
         </main>
       </Switch>
